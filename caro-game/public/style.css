@@ -1,0 +1,19 @@
+@import "https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css";
+
+.grid-cols-15 {
+  grid-template-columns: repeat(15, 1fr);
+}
+button.cell {
+  width: 35px;
+  height: 35px;
+  border: 1px solid #ccc;
+  font-size: 20px;
+  transition: background 0.2s;
+}
+button.cell:hover {
+  background: #989595;
+}
+button.X { color: #2196f3; font-weight: bold; }
+button.O { color: #e53935; font-weight: bold; }
+button.highlight { background: #fff59d !important; }
+button.win { background: #81c784 !important; }

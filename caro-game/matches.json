@@ -1,0 +1,50 @@
+[
+  {
+    "p1": "CV",
+    "p2": "DM",
+    "games": [
+      "CV",
+      "CV",
+      "CV"
+    ],
+    "finished": true
+  },
+  {
+    "p1": "CV",
+    "p2": "Thanh NV",
+    "games": [
+      "Thanh NV",
+      "CV",
+      "CV"
+    ],
+    "finished": true
+  },
+  {
+    "p1": "CV",
+    "p2": "Huong LT",
+    "games": [],
+    "finished": false
+  },
+  {
+    "p1": "DM",
+    "p2": "Thanh NV",
+    "games": [],
+    "finished": false
+  },
+  {
+    "p1": "DM",
+    "p2": "Huong LT",
+    "games": [],
+    "finished": false
+  },
+  {
+    "p1": "Thanh NV",
+    "p2": "Huong LT",
+    "games": [
+      "Thanh NV",
+      "Huong LT",
+      "Thanh NV"
+    ],
+    "finished": true
+  }
+]

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Caro Game 🎮</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="/socket.io/socket.io.js"></script>
+</head>
+<body class="flex h-screen bg-gray-100">
+  <div class="flex-1 flex flex-col items-center justify-center">
+    <h1 class="text-3xl font-bold mb-3">Caro Game 🎮</h1>
+    <div id="playerInfo" class="mb-2 text-lg font-semibold text-gray-700"></div>
+    <div id="turnInfo" class="mb-4 text-md text-gray-600"></div>
+    <button id="resetBtn" class="bg-green-500 text-white px-3 py-1 rounded mb-3 hidden">🔄 Chơi lại</button>
+    <div id="board" class="grid grid-cols-15 gap-[2px]"></div>
+  </div>
+
+  <div class="w-1/4 bg-white border-l p-3 flex flex-col">
+    <div class="font-bold mb-2">💬 Chat</div>
+    <div id="chatBox" class="flex-1 overflow-y-auto border p-2 bg-gray-50"></div>
+    <div class="flex mt-2">
+      <input id="chatInput" type="text" placeholder="Nhập tin nhắn..." class="flex-1 border rounded-l p-2">
+      <button id="sendChat" class="bg-blue-500 text-white px-3 rounded-r">Gửi</button>
+    </div>
+  </div>
+
+<div id="rankingContainer" style="margin-top: 20px;">
+  <h4>🏆 Bảng xếp hạng</h4>
+  <button id="refreshRanking">🔄 Cập nhật</button>
+  <table id="rankingTable" border="1" cellpadding="5" style="margin-top:10px;">
+    <thead><tr><th>Hạng</th><th>Tên</th><th>Điểm</th></tr></thead>
+    <tbody></tbody>
+  </table>
+</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
