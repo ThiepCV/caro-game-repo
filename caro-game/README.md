@@ -3,7 +3,10 @@ docker run --rm -it -e NGROK_AUTHTOKEN=xxxxxxxxx -p 4040:4040 ngrok/ngrok:latest
 npm install csv-parser
 npm init -y
 npm install express socket.io
-2. cấu trúc thư mục:
+2. run
+   node server.js
+
+4. cấu trúc thư mục:
 ├── server.js
 ├── package.json
 ├── players.csv
@@ -12,7 +15,7 @@ npm install express socket.io
     ├── index.html      
     ├── style.css        
     └── script.js        
-node server.js
+
 
 
 ┌────────────┐      WebSocket       ┌────────────┐
