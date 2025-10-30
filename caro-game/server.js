@@ -1,3 +1,57 @@
+// 1) PORT cho Render
+const PORT = process.env.PORT || 3000;
+server.listen(PORT, () => console.log(`🚀 Server on http://localhost:${PORT}`));
+
+// 2) Healthcheck để Render ping
+app.get('/healthz', (req, res) => res.status(200).send('ok'));
+
+// 3) (Khuyến nghị) Cấu hình Socket.IO keepalive để tránh idle drop
+const io = new Server(server, {
+  pingInterval: 25000,      // default 25000
+  pingTimeout: 60000,       // nới timeout để qua proxy/CDN
+  cors: { origin: '*' },    // nếu bạn chỉ serve cùng domain thì không cần
+});
+
+
+const path = require('path');
+const multer = require('multer');
+const upload = multer({ storage: multer.memoryStorage() });
+
+const MATCHES_PATH = path.join(process.cwd(), 'matches.json');   // file ngay trong repo
+const PLAYERS_PATH = path.join(process.cwd(), 'players.csv');
+
+// Export matches.json
+app.get('/admin/download-matches', (req, res) => {
+  try {
+    return res.download(MATCHES_PATH, 'matches.json');
+  } catch {
+    return res.status(404).send('No matches.json found');
+  }
+});
+
+// Import matches.json (ghi đè)
+app.post('/admin/upload-matches', upload.single('file'), (req, res) => {
+  try {
+    require('fs').writeFileSync(MATCHES_PATH, req.file.buffer);
+    return res.json({ ok: true });
+  } catch (e) {
+    return res.status(500).json({ ok: false, error: e.message });
+  }
+});
+
+// Tương tự cho players.csv (tuỳ chọn)
+app.get('/admin/download-players', (req, res) => res.download(PLAYERS_PATH, 'players.csv'));
+app.post('/admin/upload-players', upload.single('file'), (req, res) => {
+  try {
+    require('fs').writeFileSync(PLAYERS_PATH, req.file.buffer);
+    return res.json({ ok: true });
+  } catch (e) {
+    return res.status(500).json({ ok: false, error: e.message });
+  }
+});
+
+
+
 //logic csv
 const fs = require("fs");
 const csv = require("csv-parser");
@@ -8,7 +62,7 @@ const { Server } = require("socket.io");
 
 const app = express();
 const server = http.createServer(app);
-const io = new Server(server);
+// const io = new Server(server);
 
 app.use(express.static("public"));
 let playerList = [];
