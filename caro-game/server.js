@@ -245,7 +245,8 @@ io.on("connection", (socket) => {
           const w1 = match.games.filter(g => g === match.p1).length;
           const w2 = match.games.filter(g => g === match.p2).length;
           if (w1 === 2 || w2 === 2) match.finished = true;
-          fs.writeFileSync("matches.json", JSON.stringify(matches, null, 2));
+          //tạm ẩn để thử vervel
+          // fs.writeFileSync("matches.json", JSON.stringify(matches, null, 2));
         }
       } catch (err) {
         console.error("⚠️ Không thể lưu kết quả:", err);
