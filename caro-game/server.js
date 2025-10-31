@@ -18,7 +18,15 @@ const server = require("http").createServer(app);
 // });
 
 const io = new Server(server);
+const path = require("path");
 
+// ⚙️ Serve file tĩnh
+app.use(express.static(path.join(__dirname, "public")));
+
+// 🏠 Route gốc (/) → trả file index.html
+app.get("/", (req, res) => {
+  res.sendFile(path.join(__dirname, "public", "index.html"));
+});
 // ================== PORT & HEALTH CHECK ==================
 const PORT = process.env.PORT || 3000;
 
