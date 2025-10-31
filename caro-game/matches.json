@@ -1,0 +1,272 @@
+[
+  {
+    "p1": "ThiepCV",
+    "p2": "TungNT",
+    "games": [],
+    "finished": false
+  },
+  {
+    "p1": "ThiepCV",
+    "p2": "ManhNV",
+    "games": [],
+    "finished": false
+  },
+  {
+    "p1": "ThiepCV",
+    "p2": "HungDV",
+    "games": [],
+    "finished": false
+  },
+  {
+    "p1": "ThiepCV",
+    "p2": "LoiCD",
+    "games": [],
+    "finished": false
+  },
+  {
+    "p1": "ThiepCV",
+    "p2": "PhongNX",
+    "games": [],
+    "finished": false
+  },
+  {
+    "p1": "ThiepCV",
+    "p2": "TungNQ",
+    "games": [],
+    "finished": false
+  },
+  {
+    "p1": "ThiepCV",
+    "p2": "PhatTDT",
+    "games": [],
+    "finished": false
+  },
+  {
+    "p1": "ThiepCV",
+    "p2": "QuangDH",
+    "games": [],
+    "finished": false
+  },
+  {
+    "p1": "ThiepCV",
+    "p2": "HuuDV",
+    "games": [],
+    "finished": false
+  },
+  {
+    "p1": "TungNT",
+    "p2": "ManhNV",
+    "games": [],
+    "finished": false
+  },
+  {
+    "p1": "TungNT",
+    "p2": "HungDV",
+    "games": [],
+    "finished": false
+  },
+  {
+    "p1": "TungNT",
+    "p2": "LoiCD",
+    "games": [],
+    "finished": false
+  },
+  {
+    "p1": "TungNT",
+    "p2": "PhongNX",
+    "games": [],
+    "finished": false
+  },
+  {
+    "p1": "TungNT",
+    "p2": "TungNQ",
+    "games": [],
+    "finished": false
+  },
+  {
+    "p1": "TungNT",
+    "p2": "PhatTDT",
+    "games": [],
+    "finished": false
+  },
+  {
+    "p1": "TungNT",
+    "p2": "QuangDH",
+    "games": [],
+    "finished": false
+  },
+  {
+    "p1": "TungNT",
+    "p2": "HuuDV",
+    "games": [],
+    "finished": false
+  },
+  {
+    "p1": "ManhNV",
+    "p2": "HungDV",
+    "games": [],
+    "finished": false
+  },
+  {
+    "p1": "ManhNV",
+    "p2": "LoiCD",
+    "games": [],
+    "finished": false
+  },
+  {
+    "p1": "ManhNV",
+    "p2": "PhongNX",
+    "games": [],
+    "finished": false
+  },
+  {
+    "p1": "ManhNV",
+    "p2": "TungNQ",
+    "games": [],
+    "finished": false
+  },
+  {
+    "p1": "ManhNV",
+    "p2": "PhatTDT",
+    "games": [],
+    "finished": false
+  },
+  {
+    "p1": "ManhNV",
+    "p2": "QuangDH",
+    "games": [],
+    "finished": false
+  },
+  {
+    "p1": "ManhNV",
+    "p2": "HuuDV",
+    "games": [],
+    "finished": false
+  },
+  {
+    "p1": "HungDV",
+    "p2": "LoiCD",
+    "games": [],
+    "finished": false
+  },
+  {
+    "p1": "HungDV",
+    "p2": "PhongNX",
+    "games": [],
+    "finished": false
+  },
+  {
+    "p1": "HungDV",
+    "p2": "TungNQ",
+    "games": [],
+    "finished": false
+  },
+  {
+    "p1": "HungDV",
+    "p2": "PhatTDT",
+    "games": [],
+    "finished": false
+  },
+  {
+    "p1": "HungDV",
+    "p2": "QuangDH",
+    "games": [],
+    "finished": false
+  },
+  {
+    "p1": "HungDV",
+    "p2": "HuuDV",
+    "games": [],
+    "finished": false
+  },
+  {
+    "p1": "LoiCD",
+    "p2": "PhongNX",
+    "games": [],
+    "finished": false
+  },
+  {
+    "p1": "LoiCD",
+    "p2": "TungNQ",
+    "games": [],
+    "finished": false
+  },
+  {
+    "p1": "LoiCD",
+    "p2": "PhatTDT",
+    "games": [],
+    "finished": false
+  },
+  {
+    "p1": "LoiCD",
+    "p2": "QuangDH",
+    "games": [],
+    "finished": false
+  },
+  {
+    "p1": "LoiCD",
+    "p2": "HuuDV",
+    "games": [],
+    "finished": false
+  },
+  {
+    "p1": "PhongNX",
+    "p2": "TungNQ",
+    "games": [],
+    "finished": false
+  },
+  {
+    "p1": "PhongNX",
+    "p2": "PhatTDT",
+    "games": [],
+    "finished": false
+  },
+  {
+    "p1": "PhongNX",
+    "p2": "QuangDH",
+    "games": [],
+    "finished": false
+  },
+  {
+    "p1": "PhongNX",
+    "p2": "HuuDV",
+    "games": [],
+    "finished": false
+  },
+  {
+    "p1": "TungNQ",
+    "p2": "PhatTDT",
+    "games": [],
+    "finished": false
+  },
+  {
+    "p1": "TungNQ",
+    "p2": "QuangDH",
+    "games": [],
+    "finished": false
+  },
+  {
+    "p1": "TungNQ",
+    "p2": "HuuDV",
+    "games": [],
+    "finished": false
+  },
+  {
+    "p1": "PhatTDT",
+    "p2": "QuangDH",
+    "games": [],
+    "finished": false
+  },
+  {
+    "p1": "PhatTDT",
+    "p2": "HuuDV",
+    "games": [],
+    "finished": false
+  },
+  {
+    "p1": "QuangDH",
+    "p2": "HuuDV",
+    "games": [],
+    "finished": false
+  }
+]

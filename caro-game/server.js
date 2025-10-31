@@ -9,15 +9,19 @@ const csv = require("csv-parser");
 
 // ================== KHỞI TẠO CƠ BẢN ==================
 const app = express();
-const server = http.createServer(app);
-const io = new Server(server, {
-  pingInterval: 25000,
-  pingTimeout: 60000,
-  cors: { origin: "*" },
-});
+// const server = http.createServer(app);
+const server = require("http").createServer(app);
+// const io = new Server(server, {
+//   pingInterval: 25000,
+//   pingTimeout: 60000,
+//   cors: { origin: "*" },
+// });
+
+const io = new Server(server);
 
 // ================== PORT & HEALTH CHECK ==================
 const PORT = process.env.PORT || 3000;
+
 app.get("/healthz", (req, res) => res.status(200).send("ok"));
 
 // ================== STATIC FILES ==================
@@ -278,4 +282,8 @@ app.get("/ranking", (req, res) => {
 });
 
 // ================== START SERVER ==================
-server.listen(PORT, () => console.log(`🚀 Server on http://localhost:${PORT}`));
+// server.listen(PORT, () => console.log(`🚀 Server on http://localhost:${PORT}`));
+
+server.listen(PORT, () => console.log(`🚀 Server running on port ${PORT}`));
+
+module.exports = app;

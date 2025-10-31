@@ -2,6 +2,7 @@ docker run --rm -it -e NGROK_AUTHTOKEN=xxxxxxxxx -p 4040:4040 ngrok/ngrok:latest
 1. setup env:
 npm install csv-parser
 npm init -y
+npm install multer  
 npm install express socket.io
 2. run
    node server.js
